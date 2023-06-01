@@ -11,13 +11,14 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*-------------------------------------HEADER----------------------------------*/
 .nav-bar {
     display: flex;
     justify-content: end;
     padding: .3rem;
     margin-bottom: 3rem;
-    
+
 }
 
 .nav-bar button {
@@ -37,9 +38,12 @@ button {
     border: 0;
     border-radius: 5px;
 }
-button:hover, select:hover{
+
+button:hover,
+select:hover {
     cursor: pointer;
 }
+
 /*---------------------------------------MAIN---------------------------------*/
 main {
     height: 100vh;
@@ -69,45 +73,59 @@ main {
     border-radius: 0;
     background-color: rgba(74, 74, 74, .5);
 }
+
 /*---------------------------------------FOOTER------------------------------*/
 footer {
     background-color: #222222;
 }
 
-.footer-container {   
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 1rem;
 }
 
-.left{
+.left {
     display: flex;
 }
-span{
-    display:block;
+
+span {
+    display: block;
 }
-.selection{
+
+.selection {
     color: white;
     display: inline-block;
 }
-.green i:first-child{
-    color:#4BC800;
+
+.green i:first-child {
+    color: #4BC800;
 }
-.footer-container button{   
-    padding: 1rem;
-    font-size: 30px;
-    background-color: transparent;   
+.selection i:last-child, .selection i:nth-child(2){
+    font-size: 12px;
 }
 
-.footer-container .right button:last-child{
-    border-radius: 0;
-    background-color: rgba(74, 74, 74); 
+.footer-container button {
+    padding: .5rem 0;
+    font-size: 26px;
+    background-color: transparent;
+}
+
+.right{
+    height:90px;
+    line-height: 90px;
+    background-color: rgba(74, 74, 74);    
+}
+
+.footer-container .right button:last-child {
+    
+    padding: 1rem;
     color: red;
     font-size: 16px;
-    
+
 }
-.footer-container span{
+
+.footer-container span {
     padding: .5rem;
-    font-size: 16px;
+    font-size: 12px;
 }
