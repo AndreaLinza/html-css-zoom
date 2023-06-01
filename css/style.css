@@ -1,49 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: black;
-}
-header{
-    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-bar{ 
+header {
+    background-color: transparent;
+}
+
+.nav-bar {
     display: flex;
     justify-content: end;
     padding: .3rem;
+    margin-bottom: 3rem;
+    
 }
-.nav-bar button{
+
+.nav-bar button {
     padding: .2rem .3rem;
     font-size: 16px;
 }
-.nav-bar i{
-    padding:.1rem .2rem;
+
+.nav-bar i {
+    padding: .1rem .2rem;
 }
 
-button{
-    background-color: #4A4A4A;
+button {
+    background-color: rgb(74, 74, 74);
     color: white;
     padding: .2rem .3rem;
     margin: .3rem;
     border: 0;
     border-radius: 5px;
 }
+button:hover, select:hover{
+    cursor: pointer;
+}
 
-main{
+main {
     height: 100vh;
     flex-grow: auto;
+    overflow: auto;
     border: 1px solid blue;
 }
-footer{
-    border: 1px solid sienna;
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
-.footer-container{
+.profile-student {
+    position: relative;
+    flex-direction: row;
+}
+
+.profile-student button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 1rem 0;
+    border-radius: 0;
+    background-color: rgba(74, 74, 74, .5);
+}
+
+footer {
     background-color: #222222;
+}
+
+.footer-container {   
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.left{
+    display: flex;
+}
+.selection{
+    display: flex;
+}
+.footer-container button{
+
+    padding: 1rem;
+    font-size: 30px;
+    
+}
+select{
+    display: block;
+    rotate: 180deg;
+    background-color: transparent;
+    border: 0;
+    color: white;  
+}
+select:active{
+    transform-box:content-box
+}
+
+.footer-container .right button:last-child{
+
+    color: red;
+    width: 100%;
+    
+}
+.footer-container p{
+    
+    font-size: 16px;
 }
