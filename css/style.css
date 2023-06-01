@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+header{
+    border: 1px solid red;
+}
+
+.nav-bar{ 
+    display: flex;
+    justify-content: end;
+    padding: .3rem;
+}
+.nav-bar button{
+    padding: .2rem .3rem;
+    font-size: 16px;
+}
+.nav-bar i{
+    padding:.1rem .2rem;
+}
+
+button{
+    background-color: #4A4A4A;
+    color: white;
+    padding: .2rem .3rem;
+    margin: .3rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+main{
+    height: 100vh;
+    flex-grow: auto;
+    border: 1px solid blue;
+}
+footer{
+    border: 1px solid sienna;
+}
+
+.footer-container{
+    background-color: #222222;
+}
