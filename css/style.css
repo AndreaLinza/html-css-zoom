@@ -15,7 +15,7 @@ body {
 /*-------------------------------------HEADER----------------------------------*/
 .nav-bar {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: .3rem;
     margin-bottom: 3rem;
 
@@ -89,16 +89,13 @@ footer {
     display: inline-block;
     color: white;   
 }
-.selection i:last-child{
-    cursor: pointer;
-    padding: 2rem 0;
-} 
 
-.green i:first-child {
+.green button:first-child i{
     color: #4BC800;
 }
-.selection i:last-child, .selection i:nth-child(2){
+.selection i:last-child{
     font-size: 12px;
+    vertical-align: -10px;
 }
 
 .footer-container button {
@@ -113,7 +110,7 @@ footer {
     background-color: rgba(74, 74, 74);    
 }
 
-.footer-container .right button:last-child {
+.right button:last-child {
     
     padding: 1rem;
     color: red;
