@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------------------------HEADER----------------------------------*/
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: .3rem;
+    margin-bottom: 3rem;
+
+}
+
+.nav-bar button {
+    padding: .2rem .3rem;
+    font-size: 16px;
+}
+
+.nav-bar i {
+    padding: .1rem .2rem;
+}
+
+button {
+    background-color: rgb(74, 74, 74);
+    color: white;
+    padding: .2rem .3rem;
+    margin: .3rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;   
+}
+
+/*---------------------------------------MAIN---------------------------------*/
+main {
+    height: 100vh;
+    flex-grow: auto;
+    overflow: auto;
+}
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-student {
+    position: relative;
+    flex-direction: row;
+}
+
+.profile-student button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    background-color: rgba(74, 74, 74, .5);
+}
+
+/*---------------------------------------FOOTER------------------------------*/
+footer {
+    background-color: #222222;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection {
+    display: inline-block;
+    color: white;   
+}
+
+.green button:first-child i{
+    color: #4BC800;
+}
+.selection i:last-child{
+    font-size: 12px;
+    vertical-align: -10px;
+}
+
+.footer-container button {
+    padding: .5rem 0;
+    font-size: 26px;
+    background-color: transparent;
+}
+
+.right{
+    height:90px;
+    line-height: 90px;
+    background-color: rgba(74, 74, 74);    
+}
+
+.right button:last-child {
+    
+    padding: 1rem;
+    color: red;
+    font-size: 16px;
+
+}
+
+.footer-container span {
+    display: block;
+    padding: .5rem ;
+    font-size: 12px;
+}
