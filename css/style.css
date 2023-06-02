@@ -39,9 +39,8 @@ button {
     border-radius: 5px;
 }
 
-button:hover,
-select:hover {
-    cursor: pointer;
+button:hover {
+    cursor: pointer;   
 }
 
 /*---------------------------------------MAIN---------------------------------*/
@@ -69,7 +68,8 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: 0 0 1rem 0;
+    margin-left: 0;
+    margin-bottom: 1rem;
     border-radius: 0;
     background-color: rgba(74, 74, 74, .5);
 }
@@ -85,18 +85,14 @@ footer {
     align-items: center;
 }
 
-.left {
-    display: flex;
-}
-
-span {
-    display: block;
-}
-
 .selection {
-    color: white;
     display: inline-block;
+    color: white;   
 }
+.selection i:last-child{
+    cursor: pointer;
+    padding: 2rem 0;
+} 
 
 .green i:first-child {
     color: #4BC800;
@@ -126,6 +122,7 @@ span {
 }
 
 .footer-container span {
-    padding: .5rem;
+    display: block;
+    padding: .5rem ;
     font-size: 12px;
 }
